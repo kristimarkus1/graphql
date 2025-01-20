@@ -1,2 +1,45 @@
+# System files
 .DS_Store
-.DS_Store
+*.log
+Thumbs.db
+
+# User files
+*.pdf
+*.docx
+*.xlsx
+*.png
+*.jpg
+*.jpeg
+*.asice
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.swp
+*.old
+*.save
+
+# Hidden directories (e.g., system/user settings)
+.*
+!.gitignore
+
+# Irrelevant directories
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+OneDrive/
+Pictures/
+Public/
+ascii-art-web/
+backup/
+bin/
+groupie-tracker/
+pass/
+the-final-cl-test/
+
+# Go-specific
+go.mod
+go.sum
+bin/
