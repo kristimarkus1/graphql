@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Add CSS for styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Load Navbar Script -->
+    <script src="js/loadNavbar.js" defer></script>
+    <!-- Load Homepage Script -->
+    <script src="js/homepage.js" defer></script>
+</head>
+<body>
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div><br />
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="#" onclick="fetchPosts('All')">All</a></li>
+            <li><a href="#" onclick="fetchPosts('IT')">IT</a></li>
+            <li><a href="#" onclick="fetchPosts('Books')">Books</a></li>
+            <li><a href="#" onclick="fetchPosts('Other')">Other</a></li>
+        </ul>
+    </nav><br />
+    
+
+    
+    <h1>Welcome, <span id="username"></span>!</h1>
+    
+</body>
+</html>

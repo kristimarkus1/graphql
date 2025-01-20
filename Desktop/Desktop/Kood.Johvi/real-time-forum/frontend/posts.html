@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/loadNavbar.js" defer></script>
+    <script src="js/posts.js" defer></script>
+    
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#" class="category-button">All</a></li>
+            <li><a href="#" class="category-button">IT</a></li>
+            <li><a href="#" class="category-button">Books</a></li>
+            <li><a href="#" class="category-button">Other</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome!</h1>
+
+    <!-- Post Creation Form -->
+    <section>
+        <h2>Create a New Post</h2>
+        <form id="post-form">
+            <input type="text" name="title" placeholder="Post Title" required>
+            <textarea name="content" placeholder="Post Content" required></textarea>
+            <select name="category" id="category-select" required>
+                <option value="All">All</option>
+                <option value="IT">IT</option>
+                <option value="Books">Books</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit">Create Post</button>
+        </form>
+    </section>
+
+    <!-- Posts Section -->
+    <section>
+        <h2>Your Posts</h2>
+        <ul id="posts-list"></ul>
+    </section>
+</body>
+</html>
+

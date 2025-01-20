@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+body {
+    font-family: 'Jersey 15', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0; /* Light text color */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+#app {
+    text-align: center;
+    /* Remove these background and box-shadow properties to get rid of the white box */
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    width: auto; /* Optional: adjust to fit content */
+    max-width: none; /* Optional: adjust to fit content */
+    margin: 0; /* Optional: adjust for alignment */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0; /* Remove extra margin */
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 20px; /* Add space below the heading */
+}
+
+button {
+    font-family: 'Jersey 15', serif;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#post-form input,
+#post-form textarea,
+#post-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#post-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#post-form button:hover {
+    background-color: #0056b3;
+}
+
+#posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+#posts-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    background: #cc0000;
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    height: 90vh;
+    margin: 20px auto;
+    border: 1px solid #444;
+    background-color: #222;
+    border-radius: 8px;
+    width: 80%;
+}
+
+/* Online Users Section */
+.online-users {
+    width: 25%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-right: 1px solid #444;
+    overflow-y: auto;
+}
+
+.online-users h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #575757;
+    padding-bottom: 5px;
+}
+
+.online-users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.online-users li {
+    padding: 10px;
+    background-color: #444;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.online-users li:hover {
+    background-color: #575757;
+}
+
+/* Chat Window */
+.chat-window {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    color: white;
+    border-bottom: 1px solid #444;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 70%;
+}
+
+.message.user {
+    background-color: #4a90e2;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.message.other {
+    background-color: #555;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 15px;
+    background-color: #333;
+    gap: 10px;
+}
+
+#messageInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sendButton:hover {
+    background-color: #357abd;
+}
