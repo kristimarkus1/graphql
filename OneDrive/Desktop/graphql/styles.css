@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  color: #f0f0f0;
+  background-color: #121212;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+#user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: #242424;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#user-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+#logout-btn {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+#logout-btn:hover {
+  background-color: #c9302c;
+}
+
+section {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.chart-container {
+  background-color: #242424;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+}
+
+.chart-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+/* Chart details */
+.chart-details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #bbb;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.chart-details span {
+  padding: 5px 10px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.login-body {
+  background: linear-gradient(135deg, #1a1a1a, #121212);
+  color: #fff;
+  font-family: 'IBM Plex Mono', monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #242424;
+  color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 40px 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+.login-header p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.login-form input:focus {
+  border-color: #0078d4;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.5);
+}
+
+.login-button {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #0052a3;
+}
+
+.error-message {
+  margin-top: 15px;
+  color: #e81123;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #user-info {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  #user-info {
+    width: 50%;
+  }
+
+  #user-name {
+    font-size: 2.2rem;
+  }
+
+  #logout-btn {
+    font-size: 1rem;
+  }
+}
+
+
