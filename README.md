@@ -12,7 +12,9 @@ This is a profile viewer built using **GraphQL**, designed to fetch and display 
   - XP earned over time (line chart).
   - Audit stats (bar chart).
 - **Responsive Design**: Works seamlessly on desktop and mobile devices.
-- **Hosting**: Hosted version at [graphql-kristi-markus.netlify.app](https://graphql-kristi-markus.netlify.app/)
+- **Hostings**:
+- Hosted version at [graphql-kristi-markus.netlify.app](https://graphql-kristi-markus.netlify.app/)
+- Hosted version at https://kristimarkus1.github.io/ 
 
 ---
 
